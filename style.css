@@ -58,9 +58,10 @@ nav a:hover{
     }
 
     nav a{
-        font-size: .8rem;
+        font-size: 1rem;
         letter-spacing: 0;
         padding: 5px;
+        font-weight: bold;
     }
 }
 
@@ -333,7 +334,7 @@ header img{
     }
 
     #Contact{
-        height: 85vh;
+        height: 70vh;
     }
 
     #Contact form label{
