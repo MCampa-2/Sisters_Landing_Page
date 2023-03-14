@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+nav{
+    display: flex;
+    background-color: black;
+    padding: 15px;
+    align-items: center;
+    justify-content: flex-end;
+    top: 0;
+    position: sticky;
+    width: 100vw;
+    z-index: 1;
+    border-bottom: 3px solid rgb(174, 166, 130);
+    
+}
+nav div{
+    margin-right: auto;
+}
+
+nav div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(174, 166, 130);
+    font-size: 1.2rem;
+    transition: .5s;
+    letter-spacing: 3px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:600px) {
+    nav{
+       flex-wrap: wrap;
+       padding: 5px;
+       padding: 10px;
+    }
+
+    nav div img{
+        width: 30px;
+        height: 30px;
+    }
+
+    nav a{
+        font-size: .8rem;
+        letter-spacing: 0;
+        padding: 5px;
+    }
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+}
+
+header img{
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+#About{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    border: 4px solid rgb(174, 166, 130);
+    outline: 3px solid black;
+    
+}
+
+#About .carousel{
+    width: 50%;
+}
+
+.about-bio{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    color: rgb(174, 166, 130);
+    text-align: center;
+    font-family: cursive;
+    letter-spacing: 3px;
+}
+
+.about-bio h2{
+    font-size: 2.5rem;
+    color:rgb(174, 166, 130)
+}
+
+@media (max-width:600px) {
+
+    #About{
+        padding: 10px;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    #About .carousel{
+        width: 90%;
+    }
+
+    .about-bio{
+        padding: 0;
+        letter-spacing: 0;
+        width: 100%;
+    }
+
+    .about-bio h2{
+        font-size: 1.7rem;
+    }
+
+    .about-bio p{
+        font-size: .8rem;
+    }
+
+}
+
+
+.carousel-image{
+    width: 100%;
+    height: 350px;
+}
+
+#Art{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#Art div{
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 5px;
+    background-color: black;
+    border: 3px solid rgb(174, 166, 130);
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Art div:hover{
+    transform: scale(1,1.08);
+}
+
+
+#Art div img{
+    width: 200px;
+    height: 200px;
+}
+
+@media(max-width: 600px){
+    #Art{
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        padding: 10px;
+        height: auto;
+        
+    }
+
+    #Art div{
+        width: 100px;
+        height: 100px;
+    }
+
+    #Art div img{
+        max-width: 90px;
+        height: 90px;
+    }
+}
+
+#Pricing{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    border: 4px solid rgb(174, 166, 130);
+    outline: 3px solid black;
+    padding: 20px;
+  
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  /* Style the list */
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  
+  /* Pricing header */
+  .price .header {
+    background-color: #000000ee;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* List items */
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+
+ @media(max-width: 600px){
+    #Pricing{
+        padding: 10px;
+        height: 60vh;
+    }
+
+    #Pricing h2{
+        font-size: 1.7rem;
+    }
+
+    .price .header{
+        font-size: .8rem;
+    }
+
+    .price .li{
+        padding: 10px;
+    }
+
+    .price .grey{
+        font-size: 10px;
+    }
+
+
+ }
+
+  h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    padding: 20px;
+  }
+
+  #pro{
+    background-color: rgb(174, 166, 130);
+  }
+
+  #Contact{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #Contact form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 4px solid black;
+    outline: 3px solid rgb(174, 166, 130);
+    padding: 10px;
+  }
+
+  #Contact h2{
+    padding: 20px;
+    font-size: 2.5rem;
+    color: black;
+  }
+
+  #Contact form label{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #Contact form input{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+  }
+
+  #Contact form button{
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+  }
+
+  #Contact form button:hover{
+    background-color: rgb(174, 166, 130);
+    color: black;
+  }
+
+  @media(max-width: 600px){
+    #Contact h2{
+        font-size: 1.7rem;
+    }
+
+    #Contact{
+        height: 85vh;
+    }
+
+    #Contact form label{
+        font-size: 1rem;
+    }
+
+    #Contact form input{
+        padding: 2px;
+        height: 25px;
+    }
+
+
+    #Contact form input::placeholder{
+        font-size: .8rem;
+        text-align: flex-start;
+        padding: 5px;
+    }
+
+    #Contact form button{
+        padding: 0px;
+        font-size: .8rem;
+    }
+  }
+
+  footer{
+    background-color: black;
+    border: 4px solid rgb(174, 166, 130);
+    outline: 3px solid rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    bottom: 0;
+    height: 100px;
+  }
+
+  @media (max-width: 600px) {
+    footer{
+        height: 90px;
+    }
+  }
+
