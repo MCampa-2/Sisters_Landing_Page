@@ -10,110 +10,128 @@
     <title>Weather Forecast</title>
 </head>
 <body>
-    <nav>
-        <div class="img-container">
-            <img src="images/SunflowerBrandLogo.jpg" alt="sunflower" id="brand">
+  <nav class="nav-bar">
+    <div class="brand-logo">
+      <img src="images/SunflowerBrandLogo.jpg" style="width: 60px; height: 60px; border-radius: 50%;">
+    </div>
+    <div class="links">
+      <a href="#About">About</a>
+      <a href="#Art">My Art</a>
+      <a href="#Pricing">Pricing</a>
+      <a href="#Contact">Contact</a>
+    </div>
+    <div class="hamburger-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+  <header>
+    <img src="images/DakotasLogo.jpg">
+  </header>
+  <div id="About" class="About">
+    <div class="family-photos">
+      <div class="photo1">
+        <img src="images/DakotsFamily.jpg">
+      </div>
+      <div class="photo2">
+        <img src="images/DakotasKids.jpg">
+      </div>
+    </div>
+    <div class="Bio">
+      <h1>About Me</h1>
+      <p>My name is Dakota Shaffer and I am a married mother of three kids. While my husband works I am a stay at home mom who loves doing arts and crafts with my children. We live near the beach where we collect
+        sea shells or whatever comes across our paths to use for our art. Over the years I became very skilled in making whatever I can find in nature to create beautiful art peices so I decided to make it in to a hobby of mine where
+        I sell my art on the side. I hope you enjoy my work!
+      </p>
+    </div>
+  </div>
+  <div id="Art" class="Art">
+    <h2>Art Gallery</h2>
+    <div id="art-pic" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/eminemart.jpg">
         </div>
-        <a href="#About">About</a>
-        <a href="#Art">My Art</a>
-        <a href="#Pricing">Pricing</a>
-        <a href="#Contact">Contact</a>
-    </nav>
-    <header>
-        <img src="images/DakotasLogo.jpg">
-    </header>
-    <div id="About">
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            </div>
-          
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/DakotsFamily.jpg" alt="Los Angeles" class="d-block w-100 carousel-image">
-              </div>
-              <div class="carousel-item">
-                <img src="images/DakotasKids.jpg" alt="Chicago" class="d-block w-100 carousel-image">
-              </div>
-            </div>
-          
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-          <div class="about-bio">
-            <h2>About Me</h2>
-            <p>My name is Dakota, and I'm a married mom of three wonderful kids. I'm passionate about art and I love to create unique pieces using nature as my inspiration. 
-                I spend a lot of time exploring the outdoors, collecting leaves, flowers, and rocks to use in my artwork. In fact, I love rocks so much that I often use them as the base of my creations! 
-                I find so much joy in taking natural elements and turning them into something beautiful that I can share with others.</p>
-          </div>
+        <div class="carousel-item">
+          <img src="images/Artfromwood.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="images/CartoonPainting.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="images/RockArt.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="images/schoolart.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="images/PopsicleStickArt.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="images/TreeArt.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="images/morepoobearart.jpg">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#art-pic" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#art-pic" data-bs-slide="next">
+        <span class="carousel-control-next-icon"" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div id="Art">
-        <div><img src="images/Artfromwood.jpg"></div>
-        <div><img src="images/CartoonPainting.jpg"></div>
-        <div><img src="images/christmasart.jpg"></div>
-        <div><img src="images/eminemart.jpg"></div>
-        <div><img src="images/farmanimalart.jpg"></div>
-        <div><img src="images/goodvideart.jpg"></div>
-        <div><img src="images/heroart.jpg"></div>
-        <div><img src="images/morepoobearart.jpg"></div>
-        <div><img src="images/morewoodArt.jpg"></div>
-        <div><img src="images/poobearart.jpg"></div>
-        <div><img src="images/PopsicleStickArt.jpg"></div>
-        <div><img src="images/RockArt.jpg"></div>
-        <div><img src="images/schoolart.jpg"></div>
-        <div><img src="images/TreeArt.jpg"></div>
-        <div><img src="images/WoodArt.jpg"></div>
+  </div>
+  <div id="Pricing" class="Pricing">
+    <div class="card card1">
+      <img src="/images/xmasart.jpg" class="card-img-top" alt="RockArt">
+      <div class="card-body">
+        <h5 class="card-title">Handhelds Singles</h5>
+        <p class="card-text">$ 5.00</p>
+        <a href="#" class="btn btn-dark">Purchase</a>
+      </div>
     </div>
-    <div id="Pricing">
-        <h2>Pricing</h2>
-        <div class="columns">
-            <ul class="price">
-              <li class="header">Basic</li>
-              <li class="grey">$ 5.00 / Single Peice</li>
-              <button>Select</button>
-            </ul>
-          </div>
-          <div class="columns">
-            <ul class="price">
-              <li class="header" id="pro">Pro</li>
-              <li class="grey">$ 25.00/ Three Peices</li>
-              <button>Select</button>
-            </ul>
-          </div>
-          <div class="columns">
-            <ul class="price">
-              <li class="header">Premium</li>
-              <li class="grey">$ 50.00/ Five Peices +</li>
-              <button>Select</button>
-            </ul>
-          </div>
+    <div class="card card2">
+      <img src="/images/poobearart.jpg" class="card-img-top" alt="heroart">
+      <div class="card-body">
+        <h5 class="card-title">Ornaments 3- 5 peices</h5>
+        <p class="card-text">$ 15.00</p>
+        <a href="#" class="btn btn-dark">Purchase</a>
+      </div>
     </div>
-    <div id="Contact">
-        <h2>Contact</h2>
-        <form>
-            <label>Enter First Name</label>
-            <input type="text" name="fname" placeholder="First Name" required>
-            <label>Enter Last Name</label>
-            <input type="text" name="lname" placeholder="Last Name" required>
-            <label>Enter Email</label>
-            <input type="email" name="email" placeholder="contact@yahoo.com" required>
-            <button type="submit" name="button">Submit</button>
-        </form>
-    </div>
-    <footer>&copy; Copyright 2023 Dakota Shaffer</footer>
-   
-
-   
-    
+    <div class="card card3">
+      <img src="/images/heroart.jpg" class="card-img-top" alt="heroart">
+      <div class="card-body">
+        <h5 class="card-title">Handhelds 5-10 peices</h5>
+        <p class="card-text">$ 25.00</p>
+        <a href="#" class="btn btn-dark">Purchase</a>
+      </div>
+  </div>
+  </div>
+  <div class="Contact" id="Contact">
+    <h2>Contact</h2>
+    <form>
+      <div class="mb-3 mt-3">
+        <label for="fname" class="form-label">First Name:</label>
+        <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="lname" class="form-label">Last Name:</label>
+        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+      </div>
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea><br>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+  </div>
+  <footer>&copy; Copyright 2023 M.C</footer>
 
     <script src="main.js"></script>
 </body>
